@@ -1,12 +1,15 @@
 ![logo do projeto](assets/logo.png){ width="200" .center }
 # Notas Musicais
 
+Notas musicais é um CLI para ajudar na formação de escalas e acordes.
+Temos dois comandos disponíveis: `escala` e `acordes`.
+
 ## Como usar
 
 Você pode chamar as escalas via linhas de comando
 
 ```bash
-poetry run escalas
+poetry run notas-musicais escala
 ```
 Retornando os graus e as notas correspondentes a essa escala
 ```
@@ -21,7 +24,7 @@ Retornando os graus e as notas correspondentes a essa escala
 O primeiro parâmetro do CLI é a tonica da escala que deseja exibir. Dessa forma, você pode alterar a escala retornada
 
 ```bash
-poetry run escalas F#
+poetry run notas-musicais escala F#
 ```
 Resultado em
 ```
@@ -35,7 +38,7 @@ Resultado em
 ### Alteração na tonalidade da escala
 Você pode alterar a tonalidade da escala também. Esse é o segundo parâmetro da linha de comando. Por exemplo, a escala de `D#` maior:
 ```
-poetry run escalas D#
+poetry notas-musicais escala D# menor
 ```
 Resultados em:
 ```
@@ -50,7 +53,7 @@ Resultados em:
 Para descobrir outras opções sobre o CLI, poderíamos usar a flag --help
 
 ```
-poetry run escalas --help
+poetry notas-musicais escala --help
 
 Usage: escalas [OPTIONS] [TONICA] [TONALIDADE]
 
